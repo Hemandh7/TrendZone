@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/navbar'
 import '../CSS/home.css'
 import Slider from '../Components/slider';
+import Footer from '../Components/footer';
 
 const data = [
   { title: "Men's Eddie's Favorite Ultrasoft Thermal Henley", image: 'https://eddiebauer.scene7.com/is/image/EddieBauer/D0331827_100C1?$328V1$', price:'$38.50-$42', },
@@ -250,6 +251,7 @@ const Home = () => {
             <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjU4OTY0MTA2LjUwMTkwODM2NDcyNS5qcGVn.jpg?w=400&h=400&fit=cover" alt="" />
             </div>
           </div>
+          <Footer/>
     </div>
   )
 }
