@@ -1,0 +1,40 @@
+.slider-container {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .slider {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    transition: transform 1s ease-in-out;
+  }
+  .slider>div>img{
+    width:100%;
+  }
+  .prev-next-btns {
+    position: absolute;
+    top: 110%;
+    transform: translateY(-50%);
+    z-index:1;
+  }
+  
+  .prev-btn, .next-btn {
+    position: relative;
+    top: 100%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+  }
+  
+  .prev-btn {
+    left: 10%;
+  }
+  
+  .next-btn {
+    left: 20%;
+  }
+  .prev-btn:hover, .next-btn:hover {
+    background-color: violet;
+    color: white;
+  }
