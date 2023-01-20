@@ -1,0 +1,30 @@
+
+.products-wrapper{
+    display: flex;
+}
+.products-wrapper>div:nth-child(1){
+    width:20%;
+}
+.products-wrapper>div:nth-child(2){
+    width:80%;
+}
+.product-container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+   
+}.product-container>div{
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.product-container>div>img{
+    width: 80%;
+}
+.pro{
+    color: brown;
+}
+h2{
+  text-align: center;  
+}
+

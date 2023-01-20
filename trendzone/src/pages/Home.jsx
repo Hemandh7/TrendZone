@@ -180,7 +180,7 @@ const Home = () => {
   
   return (
     <div>
-      <Navbar/>
+     
         <div className="banner">
           <div>
           <button>SHOP WOMEN</button>
