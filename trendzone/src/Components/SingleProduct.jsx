@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/SingleProduct.css';
+import image from "../Images/also.png"
 import { useNavigate } from "react-router-dom";
+import Footer from './footer';
 import axios from 'axios';
 
 const SingleProduct = () => {
@@ -21,6 +23,13 @@ useEffect(() => {
     fetchProduct();
   }, [id]);
 
+  const addToCart = (product) => {
+    let currentCart = JSON.parse(localStorage.getItem("cart")) || [];
+    product["quantity"]=1;
+    currentCart.push(product);
+    localStorage.setItem("cart", JSON.stringify(currentCart));
+  };
+
   return (
     <>
     <div className="product-container1">
@@ -40,7 +49,7 @@ useEffect(() => {
         <h5>Size</h5>
         <button>L</button><button>M</button><button>S</button><button>XL</button>
       </div><br />
-      <button className='atc'>ADD TO CART</button>
+      <button className='atc' onClick={()=>addToCart(product)}>ADD TO CART</button>
       </div>
       <div>
         <h4>Product Description</h4>
@@ -62,13 +71,14 @@ Imported</div>
     </div>
     <div className='also'>
       <h2>Wear it With</h2>
-      <img src="" alt="" />
+      <img src={image} alt="" />
     </div>
     <div>
       <h2>
       You May Also Like
       </h2>
     </div>
+    <Footer/>
     </>
   );
 }
