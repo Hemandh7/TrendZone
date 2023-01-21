@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import image from "../Images/logo.png";
+import { FaSearch } from 'react-icons/fa';
+import { FaShoppingBag } from 'react-icons/fa';
 import '../CSS/dropdown.css';
 import Products from '../pages/products';
+
+
+
+
 const sections = [
     { name: 'NEW!', items: ['New Arrivals','New Releases','New Brands','New Deals','New in Beauty'] },
     { name: 'WOMEN', items:['Clothing','Shoes','Accessories','Handbags','Jewelry']},
@@ -20,6 +26,22 @@ export const Dropdown = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
 
     return (
+        <>
+        <div className='navTop'>
+            <div className='nav-srch'>
+                <input type="text" />
+                <button className='sea'><FaSearch/></button>
+            </div>
+            <NavLink to="/"><div className='logo'>
+            <img src={image} alt="" />
+            </div></NavLink>
+            <div className='crt'><NavLink to="cart"><FaShoppingBag/></NavLink><p>Cart</p></div>
+        </div>
+        <div className='nav-log'>
+            <div>left</div>
+            <div>mid</div>
+            <div>right</div>
+        </div>
         <div className="dropdown-navbar-wrapper">
             {sections.map((section, index) => (
                 <div
@@ -39,5 +61,6 @@ export const Dropdown = () => {
                 </div>
             ))}
         </div>
+        </>
 );
 };

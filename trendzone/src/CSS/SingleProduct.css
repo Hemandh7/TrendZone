@@ -75,4 +75,13 @@ margin:10px;
 .colors>div:nth-child(3){
   background-color: black;
 }
+.also{
+  width:75%;
+  margin: auto;
+  
+}
+.also>img{
+  width:100%;
+  cursor:pointer;
+}
   

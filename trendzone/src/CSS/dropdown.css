@@ -65,3 +65,51 @@
     visibility: visible;
     opacity:1;
 }
+.navTop{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    align-items: center;
+    margin:20px;
+    
+}
+
+.logo>img{
+width:30%;
+text-align: center;
+
+}
+.nav-srch{
+    display: flex;
+    margin:10px;
+    padding:10px;
+    font-size: 15px;
+}
+.nav-srch>input,button{
+font-size: 15px;
+margin:10px; 
+
+}
+.nav-srch>input{
+border:0px;
+border-bottom: solid;
+}
+.nav-log{
+    height:30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    align-items: center;
+    margin:10px -1px; 
+    border: 1px solid; 
+    background-color: #000;
+    color: white;
+}
+.crt{
+    text-align: center;
+    font-weight: bolder;
+}
+.sea{
+    border:0px;
+    background-color: white;
+}
