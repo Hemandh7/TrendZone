@@ -21,14 +21,15 @@ useEffect(() => {
       }
     };
     fetchProduct();
-  }, [id]);
+  },[id]);
 
   const addToCart = (product) => {
     let currentCart = JSON.parse(localStorage.getItem("cart")) || [];
     product["quantity"]=1;
     currentCart.push(product);
     localStorage.setItem("cart", JSON.stringify(currentCart));
-  };
+    alert("Item added to cart")
+};
 
   return (
     <>
