@@ -19,11 +19,13 @@
     /* added css for color change on hover or selected */
     transition: all 0.2s ease-in-out;
     color: #000;
+    
 }
 
 .dropdown-section:hover,
 .dropdown-section.selected {
     color: #2196f3;
+   
 }
 
 .dropdown-section h5 {
@@ -31,6 +33,7 @@
     padding: 0;
     font-size: 13px;
     font-weight: 600;
+   
 }
 
 .dropdown-section-items {
@@ -46,24 +49,28 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s ease-in-out;
+   
 }
 
 .dropdown-section-items div {
-    margin: 10px 0; /* increased spacing */
+    margin: 10px 0; 
     color: #000;
     font-size: 12px;
     font-weight:bolder;
     text-align: center;
     transition: all 0.2s ease-in-out;
+    
 }
 
 .dropdown-section-items div:hover {
     background-color: #f1f1f1;
+    
 }
 
 .dropdown-section:hover .dropdown-section-items {
     visibility: visible;
     opacity:1;
+    
 }
 .navTop{
     display: grid;
@@ -105,6 +112,11 @@ border-bottom: solid;
     background-color: #000;
     color: white;
 }
+.nav-log>div{
+    height:100%;
+    align-items: center;
+    
+}
 .crt{
     text-align: center;
     font-weight: bolder;
@@ -113,3 +125,36 @@ border-bottom: solid;
     border:0px;
     background-color: white;
 }
+.nav-login{
+    display: flex;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    margin:5px;padding:0px;
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-login>p{
+    margin:0px;padding:0px;
+    margin:5px 10px;
+    
+}
+.eos{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.reward{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.admin{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 5px;margin: 10px;
+}
+
+

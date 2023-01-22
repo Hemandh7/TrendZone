@@ -1,0 +1,45 @@
+
+.admin-container{
+    display:grid;
+    grid-template-columns: 70% 25%;
+    gap:20px;
+    margin:10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  input[type='text'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  button[type='submit'] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+td>img{
+    width:100%;
+}
+    
+
+

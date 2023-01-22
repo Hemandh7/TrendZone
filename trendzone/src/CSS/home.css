@@ -21,19 +21,19 @@
     top: 60%;
     padding-left: 15vh;
 }
-.banner>div>button:nth-child(1){
+.banner>div button:nth-child(1){
     background-color: black;
     color: white;
     padding: 10px;
     margin: 10px;
 }
-.banner>div>button:nth-child(2){
+.banner>div button:nth-child(2){
     background-color: black;
     color: white;
     padding:10px 20px 10px 20px;
     margin: 10px;
 }
-.banner>div>button:hover{
+.banner>div button:hover{
     background-color: white;
     color: black; 
 }
@@ -44,19 +44,19 @@
     top: 60%;
     left:65%;
 }
-.sec1>div>button:nth-child(1){
+.sec1>div button:nth-child(1){
     background-color: black;
     color: white;
     padding: 10px;
     margin: 10px;
 }
-.sec1>div>button:nth-child(2){
+.sec1>div button:nth-child(2){
     background-color: black;
     color: white;
     padding:10px 20px 10px 20px; 
     margin: 10px;
 }
-.sec1>div>button:hover{
+.sec1>div button:hover{
     background-color: white;
     color: black; 
 }
@@ -75,31 +75,31 @@
     top: 60%;
     padding-left: 15vh;
 }
-.sec2>div>button:nth-child(1){
+.sec2>div button:nth-child(1){
     background-color: white;
     color: black;
     padding: 10px;
     margin: 10px;
 }
-.sec2>div>button:nth-child(2){
+.sec2>div button:nth-child(2){
     background-color: white;
     color: black;
     padding:10px 20px 10px 20px;
     margin: 10px;
 }
-.sec2>div>button:nth-child(3){
+.sec2>div button:nth-child(3){
     background-color: white;
     color: black;
     padding:10px 20px 10px 20px;
     margin: 10px;
 }
-.sec2>div>button:nth-child(4){
+.sec2>div button:nth-child(4){
     background-color: white;
     color: black;
     padding:10px 20px 10px 20px;
     margin: 10px;
 }
-.sec2>div>button:hover{
+.sec2>div button:hover{
     background-color: black;
     color: white; 
 }
@@ -136,6 +136,9 @@ margin:10px;
 }
 .sec6{
     margin-top: 60px;
+}
+.sec6>p{
+    text-align: center;
 }
 .sec7{
 

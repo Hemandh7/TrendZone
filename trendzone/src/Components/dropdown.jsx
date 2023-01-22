@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import image from "../Images/logo.png";
 import { FaSearch } from 'react-icons/fa';
-import { FaShoppingBag } from 'react-icons/fa';
+import { FaShoppingBag,FaUserAlt } from 'react-icons/fa';
 import '../CSS/dropdown.css';
 import Products from '../pages/products';
 
@@ -31,16 +31,21 @@ export const Dropdown = () => {
             <div className='nav-srch'>
                 <input type="text" />
                 <button className='sea'><FaSearch/></button>
+                 
             </div>
             <NavLink to="/"><div className='logo'>
             <img src={image} alt="" />
             </div></NavLink>
             <div className='crt'><NavLink to="cart"><FaShoppingBag/></NavLink><p>Cart</p></div>
+            
         </div>
         <div className='nav-log'>
-            <div>left</div>
-            <div>mid</div>
-            <div>right</div>
+            <div className='reward'><img src="https://www.eddiebauer.com/static/ar-logo/ar-logo-small.png" alt="" /><p>Earn Rewards OnPurchases</p></div>
+            <div className='eos'>END OF SEASON SALE - UP TO 60% OFF
+VIEW ALL OFFERS
+</div>
+<NavLink to="Login"><div className='nav-login'><FaUserAlt/><p>Login</p>/<p>SignUP</p></div></NavLink>
+
         </div>
         <div className="dropdown-navbar-wrapper">
             {sections.map((section, index) => (
@@ -54,7 +59,7 @@ export const Dropdown = () => {
                     {dropdownOpen === index && (
                         <div className="dropdown-section-items" >
                             {section.items.map((item, i) => (
-                                <div key={i}><NavLink to="products">{item}</NavLink></div>
+                                <NavLink style={{ textDecoration: 'none'}} to="products"><div  key={i}>{item}</div></NavLink>
                             ))}
                         </div>
                     )}

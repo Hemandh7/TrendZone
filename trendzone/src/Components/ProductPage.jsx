@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../CSS/productpage.css";
 import { useNavigate } from "react-router-dom";
+import Footer from './footer';
 
 function ProductPage() {
   const nav=useNavigate();
@@ -64,7 +65,7 @@ function ProductPage() {
           <option value="">All</option>
           <option value="men">Men</option>
           <option value="women">Women</option>
-          <option value="Kids">Kids</option>
+          <option value="kids">Kids</option>
         </select><br /><br /><br />
         <button onClick={handleSort}>Sort by Price</button>
       </div>
@@ -79,6 +80,7 @@ function ProductPage() {
        ))}
       </div>
       </div>
+      <Footer/>
     </div>
   );
 }

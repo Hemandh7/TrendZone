@@ -3,6 +3,7 @@ import Navbar from '../Components/navbar'
 import '../CSS/home.css'
 import Slider from '../Components/slider';
 import Footer from '../Components/footer';
+import { NavLink } from 'react-router-dom';
 
 const data = [
   { title: "Men's Eddie's Favorite Ultrasoft Thermal Henley", image: 'https://eddiebauer.scene7.com/is/image/EddieBauer/D0331827_100C1?$328V1$', price:'$38.50-$42', },
@@ -183,20 +184,20 @@ const Home = () => {
      
         <div className="banner">
           <div>
-          <button>SHOP WOMEN</button>
-          <button>SHOP MEN</button></div>
+          <NavLink to="products"><button>SHOP WOMEN</button></NavLink>
+          <NavLink to="products"><button>SHOP MEN</button></NavLink></div>
         </div><br /><br />
         <div className='sec1'>
         <div>
-          <button>SHOP WOMEN</button>
-          <button>SHOP MEN</button></div>
+          <NavLink to="products"><button>SHOP WOMEN</button></NavLink>
+          <NavLink to="products"><button>SHOP MEN</button></NavLink></div>
         </div>
         <div className='sec2'>
           <div >
-          <button>SHOP WOMEN</button>
-          <button>SHOP MEN</button>
-          <button>SHOP KIDS</button>
-          <button>SHOP HOME</button>
+          <NavLink to="products"><button>SHOP WOMEN</button></NavLink>
+          <NavLink to="products"><button>SHOP MEN</button></NavLink>
+          <NavLink to="products"><button>SHOP KIDS</button></NavLink>
+          <NavLink to="products"><button>SHOP HOME</button></NavLink>
           </div>
         </div>
         <div className='sec3'>BUY ONLINE, PICK UP IN-STORE Learn More  ❯</div>

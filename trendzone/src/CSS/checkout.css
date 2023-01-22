@@ -1,0 +1,27 @@
+.checkout-page {
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+  }
+  
+  .checkout-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-page label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-page input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077c9;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  
