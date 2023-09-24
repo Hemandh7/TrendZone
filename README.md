@@ -25,9 +25,7 @@ Trendzone is built using a combination of modern technologies to provide you wit
 - HTML5
 - CSS3
 - JavaScript
-- Node.js (for server-side operations)
-- Express.js (for server framework)
-- MongoDB (for database)
+- MockAPI (for database)
 
 ## Getting Started
 
